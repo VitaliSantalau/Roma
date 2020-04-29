@@ -1,2 +1,2 @@
 # Roma
-Roma's site - "I am paiting"
+Roma's site - "I am painting"

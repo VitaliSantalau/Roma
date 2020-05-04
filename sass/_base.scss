@@ -1,0 +1,34 @@
+/* https://colorscheme.ru/#4H51TmNMcw0w0 */
+
+/* Основной Цвет */
+$color-primary-0: rgba(153,  51, 204, 1);	
+$color-primary-1: rgba(153, 102, 153, 1);
+$color-primary-2: rgba(102,   0, 153, 1);
+$color-primary-3: rgba(204, 102, 255, 1);
+$color-primary-4: rgba(204, 153, 255, 1);
+
+/* Вторичный Цвет A */
+$color-secondary-a-0: rgba(255,  51, 153, 1);	
+$color-secondary-a-1: rgba(153, 102, 153, 1);
+$color-secondary-a-2: rgba(153,   0, 102, 1);
+$color-secondary-a-3: rgba(255, 102, 204, 1);
+$color-secondary-a-4: rgba(255, 153, 204, 1);
+
+/* Вторичный Цвет B */
+$color-secondary-b-0: rgba(102, 102, 204, 1);	
+$color-secondary-b-1: rgba(102, 102, 153, 1);
+$color-secondary-b-2: rgba( 51,  51, 153, 1);
+$color-secondary-b-3: rgba(153, 102, 255, 1);
+$color-secondary-b-4: rgb(193, 193, 240);
+
+/* VARIABLE */
+$main-font: Helvetica, sans-serif;
+$introduction-font: Helvetic;
+$main-color: $color-primary-4;
+$introduction-background: $color-primary-2;
+$gallery-background: $color-primary-4;
+$gallery-color: $color-primary-2;
+$roof-background: $color-secondary-a-2; 
+$footer-background: $color-secondary-b-2;
+$height-header: 3em;
+$height-footer: 3em;

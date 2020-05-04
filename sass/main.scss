@@ -1,18 +1,19 @@
 /* https://colorscheme.ru/#4H51TmNMcw0w0 */
 /* Основной Цвет */
+/*
 $color-primary-0: rgba(153,  51, 204, 1);	
 $color-primary-1: rgba(153, 102, 153, 1);
 $color-primary-2: rgba(102,   0, 153, 1);
 $color-primary-3: rgba(204, 102, 255, 1);
 $color-primary-4: rgba(204, 153, 255, 1);
 /* Вторичный Цвет A */
-$color-secondary-a-0: rgba(255,  51, 153, 1);	
+/*$color-secondary-a-0: rgba(255,  51, 153, 1);	
 $color-secondary-a-1: rgba(153, 102, 153, 1);
 $color-secondary-a-2: rgba(153,   0, 102, 1);
 $color-secondary-a-3: rgba(255, 102, 204, 1);
 $color-secondary-a-4: rgba(255, 153, 204, 1);
 /* Вторичный Цвет B */
-$color-secondary-b-0: rgba(102, 102, 204, 1);	
+/*$color-secondary-b-0: rgba(102, 102, 204, 1);	
 $color-secondary-b-1: rgba(102, 102, 153, 1);
 $color-secondary-b-2: rgba( 51,  51, 153, 1);
 $color-secondary-b-3: rgba(153, 102, 255, 1);
@@ -27,15 +28,17 @@ $gallery-color: $color-primary-2;
 $roof-background: $color-secondary-a-2; 
 $footer-background: $color-secondary-b-2;
 $height-header: 3em;
-$height-footer: 3em;
+$height-footer: 3em;*/
+
+@use 'base';
 
 html, body {
   height: 100%;
-  color: $main-color;
+  color: base.$main-color;
 }
 
 body {
-  font-family: $main-font;
+  font-family: base.$main-font;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,18 +47,17 @@ body {
 
 .header {
   width: 100%;
-  height: $height-header;
+  height: base.$height-header;
   font-size: 1.2em;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   padding: .5em;
-  background-color: $roof-background;
+  background-color: base.$roof-background;
 }
 
-.language {
-  margin: 0 2em;
-  cursor: pointer;
+.parents, .teacher {
+  color: base.$main-color;
+  margin: 0 2em 0 1em;
 }
 
 .main {
@@ -71,7 +73,7 @@ body {
   height: 20em;
   display: flex;
   justify-content: center;
-  background-color: $introduction-background;
+  background-color: base.$introduction-background;
 }
 
 .self-portret {
@@ -83,11 +85,11 @@ body {
 
 .central_text {
   width: 100%;
-  font-family: $introduction-font;
+  font-family: base.$introduction-font;
   font-size: 1.5em;
   position: absolute;
   top: 11em;
-  background-color: $introduction-background;
+  background-color: base.$introduction-background;
 }
 
 .central_text {
@@ -104,9 +106,9 @@ body {
 }
 
 .left_text, .right_text {
-  font-family: $introduction-font;
+  font-family: base.$introduction-font;
   font-size: 2em;
-  color: $main-color;
+  color: base.$main-color;
 }
 
 .right_text>p {
@@ -122,8 +124,8 @@ body {
   align-content: flex-start;
   flex-wrap: wrap;
   padding: 2em;
-  color: $gallery-color;
-  background-color: $gallery-background;
+  color: base.$gallery-color;
+  background-color: base.$gallery-background;
 }
 
 .gouache, .pastel {
@@ -153,13 +155,13 @@ body {
 
 footer {
   width: 100%;
-  height: $height-footer;
+  height: base.$height-footer;
   font-size: 1.2em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: .5em;
-  background-color: $footer-background;
+  background-color: base.$footer-background;
 }
 
 .copyright {

@@ -7,12 +7,11 @@ parents.onclick = function(e) {
     parentsInfo.style.transform = 'translateY(0)';
     parents.classList.add('open');
   } else {
-    parentsInfo.style.transform = 'translateY(-13.5em)';
+    parentsInfo.style.transform = 'translateY(-15.5em)';
     parents.classList.remove('open');
 
   }
 }
-
 
 // info about teacher
 let teacher = document.querySelector('.teacher');

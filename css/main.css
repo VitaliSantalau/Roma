@@ -184,7 +184,7 @@ footer {
   margin: 0 2em;
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 810px) {
   .main_introduction {
     display: flex;
     flex-direction: column;

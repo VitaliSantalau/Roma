@@ -1,0 +1,207 @@
+/* https://colorscheme.ru/#4H51TmNMcw0w0 */
+
+/* Основной Цвет */
+$color-primary-0: rgba(153,  51, 204, 1);	
+$color-primary-1: rgba(153, 102, 153, 1);
+$color-primary-2: rgba(102,   0, 153, 1);
+$color-primary-3: rgba(204, 102, 255, 1);
+$color-primary-4: rgba(204, 153, 255, 1);
+
+/* Вторичный Цвет A */
+$color-secondary-a-0: rgba(255,  51, 153, 1);	
+$color-secondary-a-1: rgba(153, 102, 153, 1);
+$color-secondary-a-2: rgba(153,   0, 102, 1);
+$color-secondary-a-3: rgba(255, 102, 204, 1);
+$color-secondary-a-4: rgba(255, 153, 204, 1);
+
+/* Вторичный Цвет B */
+$color-secondary-b-0: rgba(102, 102, 204, 1);	
+$color-secondary-b-1: rgba(102, 102, 153, 1);
+$color-secondary-b-2: rgba( 51,  51, 153, 1);
+$color-secondary-b-3: rgba(153, 102, 255, 1);
+$color-secondary-b-4: rgb(193, 193, 240);
+
+/* VARIABLE */
+$main-font: Helvetica, sans-serif;
+
+$main-color: $color-primary-4;
+$introduction-background: $color-primary-2;
+$gallery-background: $color-primary-4;
+$gallery-color: $color-primary-2;
+$roof-background: $color-secondary-a-2; 
+$footer-background: $color-secondary-b-2;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: $main-color;
+}
+
+body {
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  padding: .5em 0;
+  background-color: $roof-background;
+}
+
+.parents, .teacher {
+  position: relative;
+  cursor: pointer;
+  margin: 0 2em 0 1em;
+  }
+
+.main {
+  width: 100%;
+  /*flex-grow: 1;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+  
+.main_introduction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: $introduction-background;
+}
+  
+  .self-portret {
+    height: 20em;
+    width: 15em;
+    position: relative;
+    margin: 0 2em;
+    background-image: url('../pictures/self-portret.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .central_text {
+    width: 100%;
+    font-size: 1.5em;
+    position: absolute;
+    top: 11em;
+    background-color: $introduction-background;
+  }
+  
+  .central_text {
+    p {
+      text-align: center;
+    }
+  }
+  
+  .left_text, .right_text {
+    font-size: 2em;
+  }
+  
+  .right_text>p {
+    margin-bottom: .7em;
+  }
+
+.main_gallery {
+  width: 100%;
+  /*flex-grow: 1;*/
+  /*display: flex;
+  flex-direction: column;
+  /*justify-content: space-evenly;*/
+  padding: 2em;
+  color: $gallery-color;
+  background-color: $gallery-background;
+}
+  
+.gouache, .pastel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+  
+.gouache_title, .pastel_title {
+  /*width: 100%;*/
+  font-size: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+}
+
+.gouache_gallery, .pastel_gallery {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+  
+.picture {
+  width: 20em;
+  height: auto;
+  margin: 1em;
+}
+  
+.horizontal {
+  height: 20em;
+  width: auto;
+}
+
+
+  footer {
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .5em;
+    background-color: $footer-background;
+  }
+
+  .copyright {
+    margin: 0 .1em;
+  }
+
+  @media all and (max-width: 400px) {
+    .main_introduction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .self-portret {
+      width: 100%;
+      height: 25em;
+      position: relative;
+      margin: 0;
+    }
+  
+    .left_text {
+      position: absolute;
+      top: 2em;
+      left: 1em;
+      z-index: 2;
+      color: $introduction-background;
+    }
+
+    .central_text {
+      width: 100%;
+      font-size: 1.8em;
+      top: 11.5em;
+    }
+
+    .right_text>p {
+      margin-bottom: .2em;
+    }
+
+  }

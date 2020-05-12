@@ -29,7 +29,7 @@
   cursor: pointer;
   color: base.$main-color;
   margin: 0 2em 0 1em;
-}*/
+}
 
 .parents::after, .teacher::after {
   position: absolute;
@@ -44,7 +44,7 @@
   content: '▼';
   top: 25%;
   font-size: .75em;
-}
+}*/
 
 .parents_info {
   width: 12em;
@@ -127,7 +127,7 @@
 .right_text>p {
   margin-bottom: .7em;
 }
-*/
+
 .main_gallery {
   width: 100%;
   flex-grow: 1;
@@ -166,7 +166,7 @@
   height: 20em;
   width: auto;
 }
-/*
+
 footer {
   width: 100%;
   height: base.$height-footer;
@@ -220,7 +220,7 @@ footer {
 
   .right_text>p {
     margin-bottom: .2em;
-  }*/
+  }
 
   .main_gallery {
     padding: 0em;
@@ -239,5 +239,5 @@ footer {
     width: 100%;
     height: auto;
     margin: .3em 0;
-  } 
+  } */
 }

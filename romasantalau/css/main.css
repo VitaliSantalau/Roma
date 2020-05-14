@@ -71,6 +71,35 @@ body {
   align-items: center;
 }
 
+.parents_info {
+  width: 12em;
+  font-size: 1em;
+  transform: translateY(-15.5em);
+  transition: transform 1.5s ease;
+  position: absolute;
+  left: 1em;
+  top: calc(3em-5px);
+  z-index: 3;
+  padding: 0.5em;
+  background-color: #cc99ff;
+  color: #660099;
+  border-bottom: 5px solid #990066;
+}
+
+/*
+.teacher_info {
+  width: 10em;
+  transform: translateY(-13.5em);
+  transition: transform 1.5s ease;
+  position: absolute;
+  left: 14em;
+  top: calc(3em-5px);
+  z-index: 3;
+  padding: .5em;
+  background-color: $gallery-background;
+  color: $gallery-color;
+  border-bottom: 5px solid $roof-background;
+}*/
 .main_introduction {
   width: 100%;
   display: flex;
